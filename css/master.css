@@ -1,0 +1,63 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+#body {
+  background: url("../imgs/ocean.jpg");
+  padding-bottom: 30px;
+}
+
+#icon {
+  margin: 20px;
+  width: 100px;
+}
+
+#hero {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  background: url("../imgs/ocean.jpg");
+}
+
+#hero_head {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 100px;
+  color: #000;
+  background: #00ff8f;
+  mix-blend-mode: screen;
+  text-align: center;
+}
+
+#main {
+  width: calc(700px - 6px);
+  max-width: calc(90% - 6px);
+  margin: auto;
+  border-left: 3px solid #00ff8f;
+  border-right: 3px solid #00ff8f;
+  border-bottom: 3px solid #00ff8f;
+}
+
+#img-container {
+  margin: auto;
+  width: 70%;
+  min-width: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#img {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  color: #212121;
+  margin-left: 10px;
+}
+
+.video {
+  margin: auto;
+  width: 560px;
+}
