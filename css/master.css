@@ -59,5 +59,9 @@ h1 {
 
 .video {
   margin: auto;
-  width: 560px;
+  max-width: 560px;
+}
+
+.video iframe {
+  width: 100%;
 }
