@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-56a7cb05.js";
-    js = ["pages/__layout.svelte-56a7cb05.js", "chunks/index-e5cb900c.js"];
-    css = ["assets/pages/__layout.svelte-11551dd0.css"];
+    entry = "pages/__layout.svelte-f2ad489e.js";
+    js = ["pages/__layout.svelte-f2ad489e.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-4be145e6.css"];
   }
 });
 
@@ -5641,7 +5641,7 @@ var cardsat, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
-    cardsat = "/_app/immutable/assets/card_sat_wireframe-a16c1ab7.png";
+    cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let featuresIndex = 0;
       let features = [
@@ -5670,10 +5670,11 @@ var init_index_svelte = __esm({
 				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 2</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
-			<div class="${"mt-10 ml-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
+			<div class="${"mt-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
         return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
       })}</div>
-				<div class="${"flex justify-between flex-wrap"}"><div class="${"mt-10"}"><p class="${"w-[300px]"}">${escape(features[featuresIndex].description)}</p></div>
+				
+				<div class="${"flex flex-col justify-center items-center md:flex-row md:justify-between"}"><div class="${"mt-10"}"><p class="${"w-[300px] md:h-[500px]"}">${escape(features[featuresIndex].description)}</p></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">STATUS</div>
@@ -5707,8 +5708,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-a4d9568e.js";
-    js3 = ["pages/index.svelte-a4d9568e.js", "chunks/index-e5cb900c.js"];
+    entry3 = "pages/index.svelte-b7b16d66.js";
+    js3 = ["pages/index.svelte-b7b16d66.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -8229,7 +8230,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-eb0a63ef.js", "js": ["start-eb0a63ef.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-90a4b339.js", "js": ["start-90a4b339.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

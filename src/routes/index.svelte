@@ -77,7 +77,7 @@
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
 		<div class="mx-auto w-[90%] mb-10">
 			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">FEATURES</div>
-			<div class="mt-10 ml-10">
+			<div class="mt-10">
 				<div class="btn-group">
 					{#each features as feature, i}
 						<input
@@ -90,9 +90,10 @@
 						/>
 					{/each}
 				</div>
-				<div class="flex justify-between flex-wrap">
+				<!-- <div class="flex justify-between flex-wrap"> -->
+				<div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
 					<div class="mt-10">
-						<p class="w-[300px]">
+						<p class="w-[300px] md:h-[500px]">
 							{features[featuresIndex].description}
 						</p>
 					</div>
