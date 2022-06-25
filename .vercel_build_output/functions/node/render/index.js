@@ -5506,7 +5506,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css4) => css4.code).join("\n"),
+          code: Array.from(result.css).map((css5) => css5.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5574,8 +5574,8 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-aeb84ec3.js";
-    js = ["pages/__layout.svelte-aeb84ec3.js", "chunks/index-e5cb900c.js"];
+    entry = "pages/__layout.svelte-f1a8ec23.js";
+    js = ["pages/__layout.svelte-f1a8ec23.js", "chunks/index-6428ba45.js"];
     css = ["assets/pages/__layout.svelte-11da6a5d.css"];
   }
 });
@@ -5626,8 +5626,8 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
     index2 = 1;
-    entry2 = "error.svelte-d1669237.js";
-    js2 = ["error.svelte-d1669237.js", "chunks/index-e5cb900c.js"];
+    entry2 = "error.svelte-64bdc433.js";
+    js2 = ["error.svelte-64bdc433.js", "chunks/index-6428ba45.js"];
     css2 = [];
   }
 });
@@ -5637,11 +5637,32 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var cardsat, Routes;
+var cardsat, css3, IconBase, DiTerminal, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
+    css3 = {
+      code: "svg.svelte-c8tyih{stroke:currentColor;fill:currentColor;stroke-width:0;width:100%;height:auto;max-height:100%}",
+      map: null
+    };
+    IconBase = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { title = null } = $$props;
+      let { viewBox } = $$props;
+      if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+        $$bindings.title(title);
+      if ($$props.viewBox === void 0 && $$bindings.viewBox && viewBox !== void 0)
+        $$bindings.viewBox(viewBox);
+      $$result.css.add(css3);
+      return `<svg xmlns="${"http://www.w3.org/2000/svg"}"${add_attribute("viewBox", viewBox, 0)} class="${"svelte-c8tyih"}">${title ? `<title>${escape(title)}</title>` : ``}${slots.default ? slots.default({}) : ``}</svg>`;
+    });
+    DiTerminal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(IconBase, "IconBase").$$render($$result, Object.assign({ viewBox: "0 0 32 32" }, $$props), {}, {
+        default: () => {
+          return `<path d="${"M25.716 6.696h-19.296c-0.888 0-1.608 0.72-1.608 1.608v16.080c0 0.888 0.72 1.608 1.608 1.608h19.296c0.888 0 1.608-0.72 1.608-1.608v-16.080c0-0.888-0.72-1.608-1.608-1.608zM8.028 17.952l3.216-3.216-3.216-3.216 1.608-1.608 4.824 4.824-4.824 4.824-1.608-1.608zM20.892 19.56h-6.432v-1.608h6.432v1.608z"}"></path>`;
+        }
+      })}`;
+    });
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let featuresIndex = 0;
       let features = [
@@ -5663,7 +5684,7 @@ var init_index_svelte = __esm({
       }
       return `<div><div class="${"navbar bg-base-100 border-gray-500 border-b"}"><div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Menu"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M4 6h16M4 12h16M4 18h16"}"></path></svg></button></div>
 		<div class="${"flex-1"}"><a class="${"btn btn-ghost normal-case text-xl"}" href="${"/"}">FYN</a></div>
-		<div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Home"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"}"></path></svg></button></div></div>
+		<div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"SHELL"}">${validate_component(DiTerminal, "DiTerminal").$$render($$result, {}, {}, {})}</button></div></div>
 	<div><div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-5xl uppercase mt-20 mx-2 font-black max-w-3xl"}">Currently Advailable</div></div>
 
 		<div class="${"flex w-fit mx-auto"}"><div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
@@ -5710,20 +5731,20 @@ var init_index_svelte = __esm({
 // .svelte-kit/output/server/nodes/2.js
 var __exports3 = {};
 __export(__exports3, {
-  css: () => css3,
+  css: () => css4,
   entry: () => entry3,
   index: () => index3,
   js: () => js3,
   module: () => index_svelte_exports
 });
-var index3, entry3, js3, css3;
+var index3, entry3, js3, css4;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-5281fd7c.js";
-    js3 = ["pages/index.svelte-5281fd7c.js", "chunks/index-e5cb900c.js"];
-    css3 = [];
+    entry3 = "pages/index.svelte-7873b548.js";
+    js3 = ["pages/index.svelte-7873b548.js", "chunks/index-6428ba45.js"];
+    css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
 
@@ -8243,7 +8264,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-d2ac6203.js", "js": ["start-d2ac6203.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-4ba9ada6.js", "js": ["start-4ba9ada6.js", "chunks/index-6428ba45.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
