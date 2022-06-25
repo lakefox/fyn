@@ -1,5 +1,6 @@
 <script>
 	import cardsat from './assets/card_sat_wireframe.png';
+	import logo from './assets/logo_black.png';
 	import DiTerminal from 'svelte-icons/di/DiTerminal.svelte';
 
 	let featuresIndex = 0;
@@ -16,7 +17,7 @@
 			name: 'CARD SAT 2',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat,
+			image: logo,
 			docs: '/'
 		}
 	];

@@ -5637,11 +5637,12 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var cardsat, css3, IconBase, DiTerminal, Routes;
+var cardsat, logo, css3, IconBase, DiTerminal, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
+    logo = "/_app/immutable/assets/logo_black-5658c5db.png";
     css3 = {
       code: "svg.svelte-c8tyih{stroke:currentColor;fill:currentColor;stroke-width:0;width:100%;height:auto;max-height:100%}",
       map: null
@@ -5675,7 +5676,7 @@ var init_index_svelte = __esm({
         {
           name: "CARD SAT 2",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat,
+          image: logo,
           docs: "/"
         }
       ];
@@ -5742,8 +5743,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-7873b548.js";
-    js3 = ["pages/index.svelte-7873b548.js", "chunks/index-6428ba45.js"];
+    entry3 = "pages/index.svelte-00fe0d8c.js";
+    js3 = ["pages/index.svelte-00fe0d8c.js", "chunks/index-6428ba45.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8264,7 +8265,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-4ba9ada6.js", "js": ["start-4ba9ada6.js", "chunks/index-6428ba45.js"], "css": [] },
+    entry: { "file": "start-0837b5fd.js", "js": ["start-0837b5fd.js", "chunks/index-6428ba45.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
