@@ -64,24 +64,14 @@
 			<div class="text-5xl uppercase mt-20 mx-2 font-black max-w-3xl">Currently Advailable</div>
 		</div>
 
-		<div class="flex w-full">
-			<div class="grid h-500 flex-grow card bg-base-300 rounded-box place-items-center">
+		<div class="flex w-fit mx-auto">
+			<div class="grid h-500 flex card bg-base-300 rounded-box place-items-center">
 				<img src={cardsat} alt="" />
 				<div class="text-2xl uppercase font-bold">CARD SAT 1</div>
-				<div class="mx-10 text-gray-500">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam
-					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
-					ea voluptates consequatur aliquam doloribus laudantium.
-				</div>
 			</div>
 			<div class="grid h-500 flex card bg-base-300 rounded-box place-items-center">
 				<img src={cardsat} alt="" />
 				<div class="text-2xl uppercase font-bold">CARD SAT 2</div>
-				<div class="mx-10 text-gray-500">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam
-					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
-					ea voluptates consequatur aliquam doloribus laudantium.
-				</div>
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />

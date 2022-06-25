@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-16db6465.js";
-    js = ["pages/__layout.svelte-16db6465.js", "chunks/index-e5cb900c.js"];
-    css = ["assets/pages/__layout.svelte-df6a0368.css"];
+    entry = "pages/__layout.svelte-6488e39b.js";
+    js = ["pages/__layout.svelte-6488e39b.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-32e50ae5.css"];
   }
 });
 
@@ -5664,18 +5664,10 @@ var init_index_svelte = __esm({
 		<div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Home"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"}"></path></svg></button></div></div>
 	<div><div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-5xl uppercase mt-20 mx-2 font-black max-w-3xl"}">Currently Advailable</div></div>
 
-		<div class="${"flex w-full"}"><div class="${"grid h-500 flex-grow card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
-				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 1</div>
-				<div class="${"mx-10 text-gray-500"}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam
-					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
-					ea voluptates consequatur aliquam doloribus laudantium.
-				</div></div>
+		<div class="${"flex w-fit mx-auto"}"><div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
+				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 1</div></div>
 			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
-				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 2</div>
-				<div class="${"mx-10 text-gray-500"}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam
-					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
-					ea voluptates consequatur aliquam doloribus laudantium.
-				</div></div></div>
+				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 2</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
 			<div class="${"mt-10 ml-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
@@ -5715,8 +5707,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-8a8b22a2.js";
-    js3 = ["pages/index.svelte-8a8b22a2.js", "chunks/index-e5cb900c.js"];
+    entry3 = "pages/index.svelte-7efe635f.js";
+    js3 = ["pages/index.svelte-7efe635f.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -8237,7 +8229,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-47dac28d.js", "js": ["start-47dac28d.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-3f22862f.js", "js": ["start-3f22862f.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
