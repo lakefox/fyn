@@ -15,23 +15,23 @@ module.exports = {
       {
         mytheme: {
 
-          "primary": "#66CC8A",
+          "primary": "#E779C1",
 
-          "secondary": "#377CFB",
+          "secondary": "#58C7F3",
 
-          "accent": "#EA5234",
+          "accent": "#F3CC30",
 
-          "neutral": "#333C4D",
+          "neutral": "#1f2937",
 
           "base-100": "#000",
 
-          "info": "#3ABFF8",
+          "info": "#53C0F3",
 
-          "success": "#36D399",
+          "success": "#71EAD2",
 
-          "warning": "#FBBD23",
+          "warning": "#F3CC30",
 
-          "error": "#F87272",
+          "error": "#E24056",
         },
       },
     ],

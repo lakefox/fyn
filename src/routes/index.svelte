@@ -1,5 +1,24 @@
 <script>
 	import cardsat from './assets/card_sat_wireframe.png';
+
+	let featuresIndex = 0;
+
+	let features = [
+		{
+			name: 'CARD SAT 1',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: cardsat
+		},
+		{
+			name: 'CARD SAT 2',
+			description:
+				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: cardsat
+		}
+	];
+
+	$: console.log(featuresIndex);
 </script>
 
 <div>
@@ -41,8 +60,8 @@
 		</div>
 	</div>
 	<div>
-		<div class="mx-auto max-w-screen-xl mb-10">
-			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">Currently Advailable</div>
+		<div class="mx-auto w-[90%] mb-10">
+			<div class="text-5xl uppercase mt-20 mx-2 font-black max-w-3xl">Currently Advailable</div>
 		</div>
 
 		<div class="flex w-full">
@@ -55,7 +74,7 @@
 					ea voluptates consequatur aliquam doloribus laudantium.
 				</div>
 			</div>
-			<div class="grid h-500 flex-grow card bg-base-300 rounded-box place-items-center">
+			<div class="grid h-500 flex card bg-base-300 rounded-box place-items-center">
 				<img src={cardsat} alt="" />
 				<div class="text-2xl uppercase font-bold">CARD SAT 2</div>
 				<div class="mx-10 text-gray-500">
@@ -65,46 +84,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="divider mx-10 mt-20" />
-		<div class="mx-auto max-w-screen-xl mb-10">
-			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">Missions</div>
-			<div class="mx-auto mt-20 w-auto flex justify-center">
-				<ul class="steps">
-					<li class="step step-info">CARD SAT 1 LAUNCH</li>
-					<li class="step step-info">ALL SYSTEMS VERIFIED</li>
-					<li class="step step-neutral">MISSION COLLECTION</li>
-					<li class="step step-error" data-content="?">DE-ORBIT</li>
-				</ul>
+		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
+		<div class="mx-auto w-[90%] mb-10">
+			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">FEATURES</div>
+			<div class="mt-10 ml-10">
+				<div class="btn-group">
+					{#each features as feature, i}
+						<input
+							type="radio"
+							name="options"
+							data-title={feature.name}
+							class="btn"
+							bind:group={featuresIndex}
+							value={i}
+						/>
+					{/each}
+				</div>
+				<div class="flex justify-between flex-wrap">
+					<div class="mt-10">
+						<p class="w-[300px]">
+							{features[featuresIndex].description}
+						</p>
+					</div>
+					<div class="w-[50%] min-w-[300px]">
+						<img src={features[featuresIndex].image} alt="" />
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="carousel w-3/5 mx-auto mb-40">
-			<div id="slide1" class="carousel-item relative w-full">
-				<img
-					src="https://images.unsplash.com/photo-1546665105-da1570d1d902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=968&q=80"
-					class="w-full"
-					title="image"
-					alt="images"
-				/>
-				<div
-					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-				>
-					<a href="#slide4" class="btn btn-circle">❮</a>
-					<a href="#slide2" class="btn btn-circle">❯</a>
-				</div>
-			</div>
-			<div id="slide2" class="carousel-item relative w-full">
-				<img
-					src="https://images.unsplash.com/photo-1608920585318-b4895fcd2e55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-					class="w-full"
-					title="image"
-					alt="images"
-				/>
-				<div
-					class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-				>
-					<a href="#slide1" class="btn btn-circle">❮</a>
-					<a href="#slide3" class="btn btn-circle">❯</a>
-				</div>
+		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
+		<div class="mx-auto w-[90%] mb-10">
+			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">STATUS</div>
+			<div class="mx-auto mt-20 w-auto flex justify-center">
+				<ul class="steps">
+					<li class="step step-info">CARD SAT 1 DEVELOPED</li>
+					<li class="step step-info">PREORDER</li>
+					<li class="step step-neutral">PRODUCTION</li>
+					<li class="step step-error" data-content="?">DELIVERY</li>
+				</ul>
 			</div>
 		</div>
 
@@ -112,7 +129,7 @@
 		<footer class="footer p-10 bg-base-300 text-base-content">
 			<div>
 				<img src="https://lakefox.net/assets/logo.png" class="w-10" alt="" />
-				<p>FYN AREOSPACE LLC <br /> An LAKEFOX Company</p>
+				<p>FYN AREOSPACE LLC <br /> A LAKEFOX Company</p>
 			</div>
 			<div>
 				<span class="footer-title">Social</span>

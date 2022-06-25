@@ -5438,7 +5438,7 @@ var init_polyfills = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-2835083a.js
+// .svelte-kit/output/server/chunks/index-1259f1f6.js
 function run(fn) {
   return fn();
 }
@@ -5465,6 +5465,13 @@ function escape(html) {
 }
 function escape_attribute_value(value) {
   return typeof value === "string" ? escape(value) : value;
+}
+function each(items, fn) {
+  let str = "";
+  for (let i2 = 0; i2 < items.length; i2 += 1) {
+    str += fn(items[i2], i2);
+  }
+  return str;
 }
 function validate_component(component, name) {
   if (!component || !component.$$render) {
@@ -5515,8 +5522,8 @@ function add_attribute(name, value, boolean) {
   return ` ${name}${assignment}`;
 }
 var current_component, escaped, missing_component, on_destroy;
-var init_index_2835083a = __esm({
-  ".svelte-kit/output/server/chunks/index-2835083a.js"() {
+var init_index_1259f1f6 = __esm({
+  ".svelte-kit/output/server/chunks/index-1259f1f6.js"() {
     Promise.resolve();
     escaped = {
       '"': "&quot;",
@@ -5546,7 +5553,7 @@ __export(layout_svelte_exports, {
 var _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
-    init_index_2835083a();
+    init_index_1259f1f6();
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${slots.default ? slots.default({}) : ``}`;
     });
@@ -5567,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-8c0bf628.js";
-    js = ["pages/__layout.svelte-8c0bf628.js", "chunks/index-3a4da079.js"];
-    css = ["assets/pages/__layout.svelte-d8354042.css"];
+    entry = "pages/__layout.svelte-16db6465.js";
+    js = ["pages/__layout.svelte-16db6465.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-df6a0368.css"];
   }
 });
 
@@ -5585,7 +5592,7 @@ function load({ error: error2, status }) {
 var Error2;
 var init_error_svelte = __esm({
   ".svelte-kit/output/server/entries/fallbacks/error.svelte.js"() {
-    init_index_2835083a();
+    init_index_1259f1f6();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -5619,8 +5626,8 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
     index2 = 1;
-    entry2 = "error.svelte-218fa7eb.js";
-    js2 = ["error.svelte-218fa7eb.js", "chunks/index-3a4da079.js"];
+    entry2 = "error.svelte-d1669237.js";
+    js2 = ["error.svelte-d1669237.js", "chunks/index-e5cb900c.js"];
     css2 = [];
   }
 });
@@ -5633,13 +5640,29 @@ __export(index_svelte_exports, {
 var cardsat, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
-    init_index_2835083a();
+    init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-a16c1ab7.png";
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let featuresIndex = 0;
+      let features = [
+        {
+          name: "CARD SAT 1",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat
+        },
+        {
+          name: "CARD SAT 2",
+          description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat
+        }
+      ];
+      {
+        console.log(featuresIndex);
+      }
       return `<div><div class="${"navbar bg-base-100 border-gray-500 border-b"}"><div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Menu"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M4 6h16M4 12h16M4 18h16"}"></path></svg></button></div>
 		<div class="${"flex-1"}"><a class="${"btn btn-ghost normal-case text-xl"}" href="${"/"}">FYN</a></div>
 		<div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Home"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"}"></path></svg></button></div></div>
-	<div><div class="${"mx-auto max-w-screen-xl mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">Currently Advailable</div></div>
+	<div><div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-5xl uppercase mt-20 mx-2 font-black max-w-3xl"}">Currently Advailable</div></div>
 
 		<div class="${"flex w-full"}"><div class="${"grid h-500 flex-grow card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 1</div>
@@ -5647,28 +5670,29 @@ var init_index_svelte = __esm({
 					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
 					ea voluptates consequatur aliquam doloribus laudantium.
 				</div></div>
-			<div class="${"grid h-500 flex-grow card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
+			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 2</div>
 				<div class="${"mx-10 text-gray-500"}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam
 					alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo
 					ea voluptates consequatur aliquam doloribus laudantium.
 				</div></div></div>
-		<div class="${"divider mx-10 mt-20"}"></div>
-		<div class="${"mx-auto max-w-screen-xl mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">Missions</div>
-			<div class="${"mx-auto mt-20 w-auto flex justify-center"}"><ul class="${"steps"}"><li class="${"step step-info"}">CARD SAT 1 LAUNCH</li>
-					<li class="${"step step-info"}">ALL SYSTEMS VERIFIED</li>
-					<li class="${"step step-neutral"}">MISSION COLLECTION</li>
-					<li class="${"step step-error"}" data-content="${"?"}">DE-ORBIT</li></ul></div></div>
-		<div class="${"carousel w-3/5 mx-auto mb-40"}"><div id="${"slide1"}" class="${"carousel-item relative w-full"}"><img src="${"https://images.unsplash.com/photo-1546665105-da1570d1d902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=968&q=80"}" class="${"w-full"}" title="${"image"}" alt="${"images"}">
-				<div class="${"absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"}"><a href="${"#slide4"}" class="${"btn btn-circle"}">\u276E</a>
-					<a href="${"#slide2"}" class="${"btn btn-circle"}">\u276F</a></div></div>
-			<div id="${"slide2"}" class="${"carousel-item relative w-full"}"><img src="${"https://images.unsplash.com/photo-1608920585318-b4895fcd2e55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"}" class="${"w-full"}" title="${"image"}" alt="${"images"}">
-				<div class="${"absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"}"><a href="${"#slide1"}" class="${"btn btn-circle"}">\u276E</a>
-					<a href="${"#slide3"}" class="${"btn btn-circle"}">\u276F</a></div></div></div>
+		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
+		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
+			<div class="${"mt-10 ml-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
+        return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
+      })}</div>
+				<div class="${"flex justify-between flex-wrap"}"><div class="${"mt-10"}"><p class="${"w-[300px]"}">${escape(features[featuresIndex].description)}</p></div>
+					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
+		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
+		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">STATUS</div>
+			<div class="${"mx-auto mt-20 w-auto flex justify-center"}"><ul class="${"steps"}"><li class="${"step step-info"}">CARD SAT 1 DEVELOPED</li>
+					<li class="${"step step-info"}">PREORDER</li>
+					<li class="${"step step-neutral"}">PRODUCTION</li>
+					<li class="${"step step-error"}" data-content="${"?"}">DELIVERY</li></ul></div></div>
 
 		<div class="${"divider"}"></div>
 		<footer class="${"footer p-10 bg-base-300 text-base-content"}"><div><img src="${"https://lakefox.net/assets/logo.png"}" class="${"w-10"}" alt="${""}">
-				<p>FYN AREOSPACE LLC <br> An LAKEFOX Company</p></div>
+				<p>FYN AREOSPACE LLC <br> A LAKEFOX Company</p></div>
 			<div><span class="${"footer-title"}">Social</span>
 				<div class="${"grid grid-flow-col gap-4"}"><a href="${"/"}" title="${"Twitter"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"}"></path></svg></a>
 					<a href="${"/"}" title="${"Youtube"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"}"></path></svg></a>
@@ -5691,8 +5715,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-b1fa9994.js";
-    js3 = ["pages/index.svelte-b1fa9994.js", "chunks/index-3a4da079.js"];
+    entry3 = "pages/index.svelte-8a8b22a2.js";
+    js3 = ["pages/index.svelte-8a8b22a2.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -5919,7 +5943,7 @@ async function setResponse(res, response) {
 }
 
 // .svelte-kit/output/server/index.js
-init_index_2835083a();
+init_index_1259f1f6();
 var __defProp2 = Object.defineProperty;
 var __defProps = Object.defineProperties;
 var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -8213,7 +8237,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-6e2998af.js", "js": ["start-6e2998af.js", "chunks/index-3a4da079.js"], "css": [] },
+    entry: { "file": "start-47dac28d.js", "js": ["start-47dac28d.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
