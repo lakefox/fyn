@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-f2ad489e.js";
-    js = ["pages/__layout.svelte-f2ad489e.js", "chunks/index-e5cb900c.js"];
-    css = ["assets/pages/__layout.svelte-4be145e6.css"];
+    entry = "pages/__layout.svelte-9a2d3e9f.js";
+    js = ["pages/__layout.svelte-9a2d3e9f.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-ecfd0808.css"];
   }
 });
 
@@ -5648,12 +5648,14 @@ var init_index_svelte = __esm({
         {
           name: "CARD SAT 1",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat
+          image: cardsat,
+          docs: "/"
         },
         {
           name: "CARD SAT 2",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat
+          image: cardsat,
+          docs: "/"
         }
       ];
       {
@@ -5674,14 +5676,25 @@ var init_index_svelte = __esm({
         return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
       })}</div>
 				
-				<div class="${"flex flex-col justify-center items-center md:flex-row md:justify-between"}"><div class="${"mt-10"}"><p class="${"w-[300px] md:h-[500px]"}">${escape(features[featuresIndex].description)}</p></div>
+				<div class="${"flex flex-col justify-center items-center md:flex-row md:justify-between"}"><div class="${"mt-10 w-[300px] md:h-[500px] text-center"}"><p class="${"text-left"}">${escape(features[featuresIndex].description)}</p>
+						<a${add_attribute("href", features[featuresIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
-		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">STATUS</div>
+		<div class="${"mx-auto w-[90%] mb-40"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">STATUS</div>
 			<div class="${"mx-auto mt-20 w-auto flex justify-center"}"><ul class="${"steps"}"><li class="${"step step-info"}">CARD SAT 1 DEVELOPED</li>
-					<li class="${"step step-info"}">PREORDER</li>
-					<li class="${"step step-neutral"}">PRODUCTION</li>
-					<li class="${"step step-error"}" data-content="${"?"}">DELIVERY</li></ul></div></div>
+					<li class="${"step step-info"}">WAITLIST</li>
+					<li class="${"step step-neutral"}">PREORDER</li>
+					<li class="${"step step-error"}" data-content="${"?"}">PRODUCTION</li></ul></div>
+			<div class="${"hero min-h-fit mt-20 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><div class="${"text-center lg:text-left"}"><h1 class="${"text-5xl font-bold"}">Join the waitlist!</h1>
+						<p class="${"py-6"}">If you&#39;re interested in a CARD SAT 1&#39;s development, we encourage you to join the
+							waitlist! This way, you can be one of the first to know as soon as CARD SAT 1 is
+							available. Plus, you&#39;ll be able to give us feedback on the product before it hits the
+							market!
+						</p></div>
+					<div class="${"card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"}">
+						<div class="${"card-body"}"><div class="${"form-control"}"><label class="${"label"}"><span class="${"label-text"}">Email</span></label>
+								<input type="${"text"}" placeholder="${"email"}" class="${"input input-bordered"}"></div>
+							<div class="${"form-control mt-6"}"><button class="${"btn btn-primary"}">Join!</button></div></div></div></div></div></div>
 
 		<div class="${"divider"}"></div>
 		<footer class="${"footer p-10 bg-base-300 text-base-content"}"><div><img src="${"https://lakefox.net/assets/logo.png"}" class="${"w-10"}" alt="${""}">
@@ -5708,8 +5721,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-b7b16d66.js";
-    js3 = ["pages/index.svelte-b7b16d66.js", "chunks/index-e5cb900c.js"];
+    entry3 = "pages/index.svelte-5f0766e3.js";
+    js3 = ["pages/index.svelte-5f0766e3.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -8230,7 +8243,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-90a4b339.js", "js": ["start-90a4b339.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-6f8c3421.js", "js": ["start-6f8c3421.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

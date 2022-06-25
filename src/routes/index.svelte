@@ -8,13 +8,15 @@
 			name: 'CARD SAT 1',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat
+			image: cardsat,
+			docs: '/'
 		},
 		{
 			name: 'CARD SAT 2',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat
+			image: cardsat,
+			docs: '/'
 		}
 	];
 
@@ -92,10 +94,13 @@
 				</div>
 				<!-- <div class="flex justify-between flex-wrap"> -->
 				<div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
-					<div class="mt-10">
-						<p class="w-[300px] md:h-[500px]">
+					<div class="mt-10 w-[300px] md:h-[500px] text-center">
+						<p class="text-left">
 							{features[featuresIndex].description}
 						</p>
+						<a href={features[featuresIndex].docs}
+							><div class="btn btn-ghost mt-10 btn-active mx-auto">DOCUMENTATION</div></a
+						>
 					</div>
 					<div class="w-[50%] min-w-[300px]">
 						<img src={features[featuresIndex].image} alt="" />
@@ -104,15 +109,42 @@
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
-		<div class="mx-auto w-[90%] mb-10">
+		<div class="mx-auto w-[90%] mb-40">
 			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">STATUS</div>
 			<div class="mx-auto mt-20 w-auto flex justify-center">
 				<ul class="steps">
 					<li class="step step-info">CARD SAT 1 DEVELOPED</li>
-					<li class="step step-info">PREORDER</li>
-					<li class="step step-neutral">PRODUCTION</li>
-					<li class="step step-error" data-content="?">DELIVERY</li>
+					<li class="step step-info">WAITLIST</li>
+					<li class="step step-neutral">PREORDER</li>
+					<li class="step step-error" data-content="?">PRODUCTION</li>
 				</ul>
+			</div>
+			<div class="hero min-h-fit mt-20 bg-base-200">
+				<div class="hero-content flex-col lg:flex-row-reverse">
+					<div class="text-center lg:text-left">
+						<h1 class="text-5xl font-bold">Join the waitlist!</h1>
+						<p class="py-6">
+							If you're interested in a CARD SAT 1's development, we encourage you to join the
+							waitlist! This way, you can be one of the first to know as soon as CARD SAT 1 is
+							available. Plus, you'll be able to give us feedback on the product before it hits the
+							market!
+						</p>
+					</div>
+					<div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+						<!-- svelte-ignore a11y-label-has-associated-control -->
+						<div class="card-body">
+							<div class="form-control">
+								<label class="label">
+									<span class="label-text">Email</span>
+								</label>
+								<input type="text" placeholder="email" class="input input-bordered" />
+							</div>
+							<div class="form-control mt-6">
+								<button class="btn btn-primary">Join!</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
