@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-9a2d3e9f.js";
-    js = ["pages/__layout.svelte-9a2d3e9f.js", "chunks/index-e5cb900c.js"];
-    css = ["assets/pages/__layout.svelte-ecfd0808.css"];
+    entry = "pages/__layout.svelte-aeb84ec3.js";
+    js = ["pages/__layout.svelte-aeb84ec3.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-11da6a5d.css"];
   }
 });
 
@@ -5676,7 +5676,7 @@ var init_index_svelte = __esm({
         return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
       })}</div>
 				
-				<div class="${"flex flex-col justify-center items-center md:flex-row md:justify-between"}"><div class="${"mt-10 w-[300px] md:h-[500px] text-center"}"><p class="${"text-left"}">${escape(features[featuresIndex].description)}</p>
+				<div class="${"flex flex-col justify-center items-center sm:flex-row sm:justify-between"}"><div class="${"mt-10 w-[300px] sm:h-[500px] text-center"}"><p class="${"text-left"}">${escape(features[featuresIndex].description)}</p>
 						<a${add_attribute("href", features[featuresIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
@@ -5721,8 +5721,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-5f0766e3.js";
-    js3 = ["pages/index.svelte-5f0766e3.js", "chunks/index-e5cb900c.js"];
+    entry3 = "pages/index.svelte-5281fd7c.js";
+    js3 = ["pages/index.svelte-5281fd7c.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -8243,7 +8243,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-6f8c3421.js", "js": ["start-6f8c3421.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-d2ac6203.js", "js": ["start-d2ac6203.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

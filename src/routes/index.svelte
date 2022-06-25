@@ -93,8 +93,8 @@
 					{/each}
 				</div>
 				<!-- <div class="flex justify-between flex-wrap"> -->
-				<div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
-					<div class="mt-10 w-[300px] md:h-[500px] text-center">
+				<div class="flex flex-col justify-center items-center sm:flex-row sm:justify-between">
+					<div class="mt-10 w-[300px] sm:h-[500px] text-center">
 						<p class="text-left">
 							{features[featuresIndex].description}
 						</p>
