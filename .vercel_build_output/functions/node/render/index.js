@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-6488e39b.js";
-    js = ["pages/__layout.svelte-6488e39b.js", "chunks/index-e5cb900c.js"];
-    css = ["assets/pages/__layout.svelte-32e50ae5.css"];
+    entry = "pages/__layout.svelte-56a7cb05.js";
+    js = ["pages/__layout.svelte-56a7cb05.js", "chunks/index-e5cb900c.js"];
+    css = ["assets/pages/__layout.svelte-11551dd0.css"];
   }
 });
 
@@ -5671,7 +5671,7 @@ var init_index_svelte = __esm({
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
 			<div class="${"mt-10 ml-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
-        return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
+        return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
       })}</div>
 				<div class="${"flex justify-between flex-wrap"}"><div class="${"mt-10"}"><p class="${"w-[300px]"}">${escape(features[featuresIndex].description)}</p></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
@@ -5707,8 +5707,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-7efe635f.js";
-    js3 = ["pages/index.svelte-7efe635f.js", "chunks/index-e5cb900c.js"];
+    entry3 = "pages/index.svelte-a4d9568e.js";
+    js3 = ["pages/index.svelte-a4d9568e.js", "chunks/index-e5cb900c.js"];
     css3 = [];
   }
 });
@@ -8229,7 +8229,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-3f22862f.js", "js": ["start-3f22862f.js", "chunks/index-e5cb900c.js"], "css": [] },
+    entry: { "file": "start-eb0a63ef.js", "js": ["start-eb0a63ef.js", "chunks/index-e5cb900c.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

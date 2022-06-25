@@ -84,7 +84,7 @@
 							type="radio"
 							name="options"
 							data-title={feature.name}
-							class="btn"
+							class="btn min-w-fit"
 							bind:group={featuresIndex}
 							value={i}
 						/>
