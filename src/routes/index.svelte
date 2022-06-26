@@ -140,8 +140,8 @@
 		<div class="divider" />
 		<footer class="footer p-10 bg-base-300 text-base-content">
 			<div>
-				<img src="https://lakefox.net/assets/logo.png" class="w-10" alt="" />
-				<p>FYN AREOSPACE LLC <br /> A LAKEFOX Company</p>
+				<img src={logo} class="w-10" alt="" />
+				<p>FYN AREOSPACE LLC</p>
 			</div>
 			<div>
 				<span class="footer-title">Social</span>
