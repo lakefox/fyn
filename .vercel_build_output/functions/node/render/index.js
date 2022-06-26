@@ -5637,12 +5637,12 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var cardsat, logo, css3, IconBase, DiTerminal, Routes;
+var cardsat, startracker, css3, IconBase, DiTerminal, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
-    logo = "/_app/immutable/assets/logo_black-5658c5db.png";
+    startracker = "/_app/immutable/assets/star_tracker-d089a6cf.png";
     css3 = {
       code: "svg.svelte-c8tyih{stroke:currentColor;fill:currentColor;stroke-width:0;width:100%;height:auto;max-height:100%}",
       map: null
@@ -5674,9 +5674,9 @@ var init_index_svelte = __esm({
           docs: "/"
         },
         {
-          name: "CARD SAT 2",
+          name: "STAR TRACKER",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: logo,
+          image: startracker,
           docs: "/"
         }
       ];
@@ -5690,8 +5690,8 @@ var init_index_svelte = __esm({
 
 		<div class="${"flex w-fit mx-auto"}"><div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 1</div></div>
-			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", cardsat, 0)} alt="${""}">
-				<div class="${"text-2xl uppercase font-bold"}">CARD SAT 2</div></div></div>
+			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", startracker, 0)} alt="${""}">
+				<div class="${"text-2xl uppercase font-bold"}">STAR TRACKER</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
 			<div class="${"mt-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
@@ -5709,9 +5709,8 @@ var init_index_svelte = __esm({
 					<li class="${"step step-error"}" data-content="${"?"}">PRODUCTION</li></ul></div>
 			<div class="${"hero min-h-fit mt-20 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><div class="${"text-center lg:text-left"}"><h1 class="${"text-5xl font-bold"}">Join the waitlist!</h1>
 						<p class="${"py-6"}">If you&#39;re interested in a CARD SAT 1&#39;s development, we encourage you to join the
-							waitlist! This way, you can be one of the first to know as soon as CARD SAT 1 is
-							available. Plus, you&#39;ll be able to give us feedback on the product before it hits the
-							market!
+							waitlist! This way, you can be one of the first to know when CARD SAT 1 is available.
+							Plus, you&#39;ll be able to give us feedback on the product before it hits the market!
 						</p></div>
 					<div class="${"card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"}">
 						<div class="${"card-body"}"><div class="${"form-control"}"><label class="${"label"}"><span class="${"label-text"}">Email</span></label>
@@ -5743,8 +5742,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-00fe0d8c.js";
-    js3 = ["pages/index.svelte-00fe0d8c.js", "chunks/index-6428ba45.js"];
+    entry3 = "pages/index.svelte-1bea33af.js";
+    js3 = ["pages/index.svelte-1bea33af.js", "chunks/index-6428ba45.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8265,7 +8264,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-0837b5fd.js", "js": ["start-0837b5fd.js", "chunks/index-6428ba45.js"], "css": [] },
+    entry: { "file": "start-d4e0ad1e.js", "js": ["start-d4e0ad1e.js", "chunks/index-6428ba45.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

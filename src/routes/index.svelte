@@ -1,5 +1,6 @@
 <script>
 	import cardsat from './assets/card_sat_wireframe.png';
+	import startracker from './assets/star_tracker.png';
 	import logo from './assets/logo_black.png';
 	import DiTerminal from 'svelte-icons/di/DiTerminal.svelte';
 
@@ -14,10 +15,10 @@
 			docs: '/'
 		},
 		{
-			name: 'CARD SAT 2',
+			name: 'STAR TRACKER',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: logo,
+			image: startracker,
 			docs: '/'
 		}
 	];
@@ -61,8 +62,8 @@
 				<div class="text-2xl uppercase font-bold">CARD SAT 1</div>
 			</div>
 			<div class="grid h-500 flex card bg-base-300 rounded-box place-items-center">
-				<img src={cardsat} alt="" />
-				<div class="text-2xl uppercase font-bold">CARD SAT 2</div>
+				<img src={startracker} alt="" />
+				<div class="text-2xl uppercase font-bold">STAR TRACKER</div>
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
@@ -114,9 +115,8 @@
 						<h1 class="text-5xl font-bold">Join the waitlist!</h1>
 						<p class="py-6">
 							If you're interested in a CARD SAT 1's development, we encourage you to join the
-							waitlist! This way, you can be one of the first to know as soon as CARD SAT 1 is
-							available. Plus, you'll be able to give us feedback on the product before it hits the
-							market!
+							waitlist! This way, you can be one of the first to know when CARD SAT 1 is available.
+							Plus, you'll be able to give us feedback on the product before it hits the market!
 						</p>
 					</div>
 					<div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
