@@ -21,13 +21,6 @@
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
 			docs: '/'
-		},
-		{
-			name: 'HOISTING',
-			description:
-				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: balloon,
-			docs: '/'
 		}
 	];
 
