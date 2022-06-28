@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-30393ec6.js";
-    js = ["pages/__layout.svelte-30393ec6.js", "chunks/index-888fe02f.js"];
-    css = ["assets/pages/__layout.svelte-e6fd0276.css"];
+    entry = "pages/__layout.svelte-f48472c3.js";
+    js = ["pages/__layout.svelte-f48472c3.js", "chunks/index-888fe02f.js"];
+    css = ["assets/pages/__layout.svelte-baa6471a.css"];
   }
 });
 
@@ -5706,6 +5706,24 @@ var init_index_svelte = __esm({
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: cardsat,
           docs: "/"
+        },
+        {
+          name: "STEREO CAM",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat,
+          docs: "/"
+        },
+        {
+          name: "STEREO CAM",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat,
+          docs: "/"
+        },
+        {
+          name: "STEREO CAM",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat,
+          docs: "/"
         }
       ];
       {
@@ -5721,7 +5739,7 @@ var init_index_svelte = __esm({
 			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", startracker, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">STAR TRACKER</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
-		<div class="${"mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center"}">${each(components, (component) => {
+		<div class="${"mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center scrollbar"}">${each(components, (component) => {
         return `<div class="${"card w-96 bg-base-100 shadow-xl min-w-[300px]"}"><figure class="${"px-10 pt-10"}"><img${add_attribute("src", component.image, 0)}${add_attribute("alt", component.name, 0)} class="${"rounded-xl"}"></figure>
 					<div class="${"card-body items-center text-center"}"><h2 class="${"card-title"}">${escape(component.name)}</h2>
 						<p>${escape(component.description)}</p>
@@ -5789,8 +5807,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-c8e7f7af.js";
-    js3 = ["pages/index.svelte-c8e7f7af.js", "chunks/index-888fe02f.js"];
+    entry3 = "pages/index.svelte-bc434cf5.js";
+    js3 = ["pages/index.svelte-bc434cf5.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8311,7 +8329,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-7907466e.js", "js": ["start-7907466e.js", "chunks/index-888fe02f.js"], "css": [] },
+    entry: { "file": "start-beefc597.js", "js": ["start-beefc597.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
