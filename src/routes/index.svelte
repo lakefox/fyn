@@ -52,27 +52,6 @@
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: cardsat,
 			docs: '/'
-		},
-		{
-			name: 'STEREO CAM',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat,
-			docs: '/'
-		},
-		{
-			name: 'STEREO CAM',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat,
-			docs: '/'
-		},
-		{
-			name: 'STEREO CAM',
-			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat,
-			docs: '/'
 		}
 	];
 
@@ -129,7 +108,9 @@
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
-		<div class="mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center scrollbar">
+		<div
+			class="mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center scrollbar"
+		>
 			{#each components as component}
 				<div class="card w-96 bg-base-100 shadow-xl min-w-[300px]">
 					<figure class="px-10 pt-10">

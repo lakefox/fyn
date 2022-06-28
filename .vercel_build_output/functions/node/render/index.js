@@ -5706,24 +5706,6 @@ var init_index_svelte = __esm({
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: cardsat,
           docs: "/"
-        },
-        {
-          name: "STEREO CAM",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat,
-          docs: "/"
-        },
-        {
-          name: "STEREO CAM",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat,
-          docs: "/"
-        },
-        {
-          name: "STEREO CAM",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat,
-          docs: "/"
         }
       ];
       {
@@ -5807,8 +5789,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-bc434cf5.js";
-    js3 = ["pages/index.svelte-bc434cf5.js", "chunks/index-888fe02f.js"];
+    entry3 = "pages/index.svelte-e83ba0a3.js";
+    js3 = ["pages/index.svelte-e83ba0a3.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8329,7 +8311,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-beefc597.js", "js": ["start-beefc597.js", "chunks/index-888fe02f.js"], "css": [] },
+    entry: { "file": "start-fdc9b0a1.js", "js": ["start-fdc9b0a1.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
