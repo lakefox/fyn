@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-d4e0ad1e.js",
+    "file": "start-2c1024b8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -13,7 +13,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-f1a8ec23.js",
+    "file": "pages/__layout.svelte-1404689d.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -21,7 +21,7 @@
       "_index-6428ba45.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-11da6a5d.css"
+      "assets/pages/__layout.svelte-bf962c09.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -34,7 +34,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-1bea33af.js",
+    "file": "pages/index.svelte-17c8e895.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -46,7 +46,9 @@
     ],
     "assets": [
       "assets/card_sat_wireframe-03ae87f2.png",
-      "assets/star_tracker-d089a6cf.png"
+      "assets/star_tracker-d089a6cf.png",
+      "assets/balloon-3e499072.png",
+      "assets/logo_black-5658c5db.png"
     ]
   },
   "_index-6428ba45.js": {

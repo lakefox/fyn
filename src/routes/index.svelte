@@ -1,6 +1,7 @@
 <script>
 	import cardsat from './assets/card_sat_wireframe.png';
 	import startracker from './assets/star_tracker.png';
+	import balloon from './assets/balloon.png';
 	import logo from './assets/logo_black.png';
 	import DiTerminal from 'svelte-icons/di/DiTerminal.svelte';
 
@@ -19,6 +20,13 @@
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
+			docs: '/'
+		},
+		{
+			name: 'HOISTING',
+			description:
+				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: balloon,
 			docs: '/'
 		}
 	];
@@ -94,6 +102,25 @@
 					</div>
 					<div class="w-[50%] min-w-[300px]">
 						<img src={features[featuresIndex].image} alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
+		<div class="mx-auto w-[90%] mb-10">
+			<div class="hero mt-40 mb-40 bg-base-200">
+				<div class="hero-content flex-col lg:flex-row-reverse">
+					<img src={balloon} class="max-w-sm rounded-lg shadow-2xl" alt="balloon" />
+					<div>
+						<h1 class="text-5xl font-bold">NEED LAUNCH ASSISTANCE?</h1>
+						<p class="py-6">
+							We're excited to offer our new suborbital balloon launch service. For just $100 per
+							month per 1U, you can launch your payload into space! This is an incredible
+							opportunity to get your experiments or payloads into space quickly and cheaply. We
+							provide a plug and play system that includes all the power and datalink capabilites
+							you need.
+						</p>
+						<button class="btn btn-primary">Get Started</button>
 					</div>
 				</div>
 			</div>

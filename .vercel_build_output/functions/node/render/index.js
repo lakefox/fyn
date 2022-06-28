@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-f1a8ec23.js";
-    js = ["pages/__layout.svelte-f1a8ec23.js", "chunks/index-6428ba45.js"];
-    css = ["assets/pages/__layout.svelte-11da6a5d.css"];
+    entry = "pages/__layout.svelte-1404689d.js";
+    js = ["pages/__layout.svelte-1404689d.js", "chunks/index-6428ba45.js"];
+    css = ["assets/pages/__layout.svelte-bf962c09.css"];
   }
 });
 
@@ -5637,12 +5637,14 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var cardsat, startracker, css3, IconBase, DiTerminal, Routes;
+var cardsat, startracker, balloon, logo, css3, IconBase, DiTerminal, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
     startracker = "/_app/immutable/assets/star_tracker-d089a6cf.png";
+    balloon = "/_app/immutable/assets/balloon-3e499072.png";
+    logo = "/_app/immutable/assets/logo_black-5658c5db.png";
     css3 = {
       code: "svg.svelte-c8tyih{stroke:currentColor;fill:currentColor;stroke-width:0;width:100%;height:auto;max-height:100%}",
       map: null
@@ -5678,6 +5680,12 @@ var init_index_svelte = __esm({
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: startracker,
           docs: "/"
+        },
+        {
+          name: "HOISTING",
+          description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: balloon,
+          docs: "/"
         }
       ];
       {
@@ -5702,6 +5710,16 @@ var init_index_svelte = __esm({
 						<a${add_attribute("href", features[featuresIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
+		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"hero mt-40 mb-40 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><img${add_attribute("src", balloon, 0)} class="${"max-w-sm rounded-lg shadow-2xl"}" alt="${"balloon"}">
+					<div><h1 class="${"text-5xl font-bold"}">NEED LAUNCH ASSISTANCE?</h1>
+						<p class="${"py-6"}">We&#39;re excited to offer our new suborbital balloon launch service. For just $100 per
+							month per 1U, you can launch your payload into space! This is an incredible
+							opportunity to get your experiments or payloads into space quickly and cheaply. We
+							provide a plug and play system that includes all the power and datalink capabilites
+							you need.
+						</p>
+						<button class="${"btn btn-primary"}">Get Started</button></div></div></div></div>
+		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-40"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">STATUS</div>
 			<div class="${"mx-auto mt-20 w-auto flex justify-center"}"><ul class="${"steps"}"><li class="${"step step-info"}">CARD SAT 1 DEVELOPED</li>
 					<li class="${"step step-info"}">WAITLIST</li>
@@ -5718,8 +5736,8 @@ var init_index_svelte = __esm({
 							<div class="${"form-control mt-6"}"><button class="${"btn btn-primary"}">Join!</button></div></div></div></div></div></div>
 
 		<div class="${"divider"}"></div>
-		<footer class="${"footer p-10 bg-base-300 text-base-content"}"><div><img src="${"https://lakefox.net/assets/logo.png"}" class="${"w-10"}" alt="${""}">
-				<p>FYN AREOSPACE LLC <br> A LAKEFOX Company</p></div>
+		<footer class="${"footer p-10 bg-base-300 text-base-content"}"><div><img${add_attribute("src", logo, 0)} class="${"w-10"}" alt="${""}">
+				<p>FYN AREOSPACE LLC</p></div>
 			<div><span class="${"footer-title"}">Social</span>
 				<div class="${"grid grid-flow-col gap-4"}"><a href="${"/"}" title="${"Twitter"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"}"></path></svg></a>
 					<a href="${"/"}" title="${"Youtube"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" viewBox="${"0 0 24 24"}" class="${"fill-current"}"><path d="${"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"}"></path></svg></a>
@@ -5742,8 +5760,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-1bea33af.js";
-    js3 = ["pages/index.svelte-1bea33af.js", "chunks/index-6428ba45.js"];
+    entry3 = "pages/index.svelte-17c8e895.js";
+    js3 = ["pages/index.svelte-17c8e895.js", "chunks/index-6428ba45.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8264,7 +8282,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-d4e0ad1e.js", "js": ["start-d4e0ad1e.js", "chunks/index-6428ba45.js"], "css": [] },
+    entry: { "file": "start-2c1024b8.js", "js": ["start-2c1024b8.js", "chunks/index-6428ba45.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
