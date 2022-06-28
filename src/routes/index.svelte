@@ -124,22 +124,6 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex justify-center">
-			<div class="mr-20">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white"
-					><path
-						d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"
-					/></svg
-				>
-			</div>
-			<div class="ml-20">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white"
-					><path
-						d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-					/></svg
-				>
-			</div>
-		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
 		<div class="mx-auto w-[90%] mb-10">
 			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">CARDSATS</div>
