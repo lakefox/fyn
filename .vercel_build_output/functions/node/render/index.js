@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-1404689d.js";
-    js = ["pages/__layout.svelte-1404689d.js", "chunks/index-6428ba45.js"];
-    css = ["assets/pages/__layout.svelte-bf962c09.css"];
+    entry = "pages/__layout.svelte-606456cd.js";
+    js = ["pages/__layout.svelte-606456cd.js", "chunks/index-888fe02f.js"];
+    css = ["assets/pages/__layout.svelte-1216daf0.css"];
   }
 });
 
@@ -5626,8 +5626,8 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
     index2 = 1;
-    entry2 = "error.svelte-64bdc433.js";
-    js2 = ["error.svelte-64bdc433.js", "chunks/index-6428ba45.js"];
+    entry2 = "error.svelte-a2ab0aeb.js";
+    js2 = ["error.svelte-a2ab0aeb.js", "chunks/index-888fe02f.js"];
     css2 = [];
   }
 });
@@ -5667,23 +5667,49 @@ var init_index_svelte = __esm({
       })}`;
     });
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let featuresIndex = 0;
-      let features = [
+      let cardsatsIndex = 0;
+      let cardsats = [
         {
           name: "CARD SAT 1",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          description: "Card sat 1 is a high-powered single-board satellite capable of sending and receiving messages from low-cost transceivers on the ground. It includes a full suite of cardsats like satellite-to-satellite communication so you can transmit across the globe.",
           image: cardsat,
           docs: "/"
         },
         {
-          name: "STAR TRACKER",
+          name: "CARD SAT 2",
+          description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: startracker,
+          docs: "/"
+        },
+        {
+          name: "CARD SAT 3",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: startracker,
           docs: "/"
         }
       ];
+      let components = [
+        {
+          name: "STAR TRACKER",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: startracker,
+          docs: "/"
+        },
+        {
+          name: "REACTION WHEELS",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: balloon,
+          docs: "/"
+        },
+        {
+          name: "STEREO CAM",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
+          image: cardsat,
+          docs: "/"
+        }
+      ];
       {
-        console.log(featuresIndex);
+        console.log(cardsatsIndex);
       }
       return `<div><div class="${"navbar bg-base-100 border-gray-500 border-b"}"><div class="${"flex-none"}"><button class="${"btn btn-square btn-ghost"}" title="${"Menu"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" fill="${"none"}" viewBox="${"0 0 24 24"}" class="${"inline-block w-5 h-5 stroke-current"}"><path stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"2"}" d="${"M4 6h16M4 12h16M4 18h16"}"></path></svg></button></div>
 		<div class="${"flex-1"}"><a class="${"btn btn-ghost normal-case text-xl"}" href="${"/"}">FYN</a></div>
@@ -5695,14 +5721,23 @@ var init_index_svelte = __esm({
 			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", startracker, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">STAR TRACKER</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
-		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">FEATURES</div>
-			<div class="${"mt-10"}"><div class="${"btn-group"}">${each(features, (feature, i2) => {
-        return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", feature.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === featuresIndex ? add_attribute("checked", true, 1) : ""}>`;
+		<div class="${"mx-auto w-[90%] mb-10 flex overflow-x-auto justify-center"}">${each(components, (component) => {
+        return `<div class="${"card w-96 bg-base-100 shadow-xl"}"><figure class="${"px-10 pt-10"}"><img${add_attribute("src", component.image, 0)}${add_attribute("alt", component.name, 0)} class="${"rounded-xl"}"></figure>
+					<div class="${"card-body items-center text-center"}"><h2 class="${"card-title"}">${escape(component.name)}</h2>
+						<p>${escape(component.description)}</p>
+						<div class="${"card-actions"}"><button class="${"btn btn-primary"}">Learn More</button>
+						</div></div>
+				</div>`;
+      })}</div>
+		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
+		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">CARDSATS</div>
+			<div class="${"mt-10"}"><div class="${"btn-group"}">${each(cardsats, (cardsat2, i2) => {
+        return `<input type="${"radio"}" name="${"options"}"${add_attribute("data-title", cardsat2.name, 0)} class="${"btn min-w-fit"}"${add_attribute("value", i2, 0)}${i2 === cardsatsIndex ? add_attribute("checked", true, 1) : ""}>`;
       })}</div>
 				
-				<div class="${"flex flex-col justify-center items-center sm:flex-row sm:justify-between"}"><div class="${"mt-10 w-[300px] sm:h-[500px] text-center"}"><p class="${"text-left"}">${escape(features[featuresIndex].description)}</p>
-						<a${add_attribute("href", features[featuresIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
-					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", features[featuresIndex].image, 0)} alt="${""}"></div></div></div></div>
+				<div class="${"flex flex-col justify-center items-center sm:flex-row sm:justify-between"}"><div class="${"mt-10 w-[300px] sm:h-[500px] text-center"}"><p class="${"text-left"}">${escape(cardsats[cardsatsIndex].description)}</p>
+						<a${add_attribute("href", cardsats[cardsatsIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
+					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", cardsats[cardsatsIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"hero mt-40 mb-40 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><img${add_attribute("src", balloon, 0)} class="${"max-w-sm rounded-lg shadow-2xl"}" alt="${"balloon"}">
 					<div><h1 class="${"text-5xl font-bold"}">NEED LAUNCH ASSISTANCE?</h1>
@@ -5754,8 +5789,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-4fca77e1.js";
-    js3 = ["pages/index.svelte-4fca77e1.js", "chunks/index-6428ba45.js"];
+    entry3 = "pages/index.svelte-605c0072.js";
+    js3 = ["pages/index.svelte-605c0072.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8276,7 +8311,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-9c14698e.js", "js": ["start-9c14698e.js", "chunks/index-6428ba45.js"], "css": [] },
+    entry: { "file": "start-00503f1f.js", "js": ["start-00503f1f.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

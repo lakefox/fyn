@@ -5,18 +5,25 @@
 	import logo from './assets/logo_black.png';
 	import DiTerminal from 'svelte-icons/di/DiTerminal.svelte';
 
-	let featuresIndex = 0;
+	let cardsatsIndex = 0;
 
-	let features = [
+	let cardsats = [
 		{
 			name: 'CARD SAT 1',
 			description:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+				'Card sat 1 is a high-powered single-board satellite capable of sending and receiving messages from low-cost transceivers on the ground. It includes a full suite of cardsats like satellite-to-satellite communication so you can transmit across the globe.',
 			image: cardsat,
 			docs: '/'
 		},
 		{
-			name: 'STAR TRACKER',
+			name: 'CARD SAT 2',
+			description:
+				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: startracker,
+			docs: '/'
+		},
+		{
+			name: 'CARD SAT 3',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
@@ -24,7 +31,40 @@
 		}
 	];
 
-	$: console.log(featuresIndex);
+	let components = [
+		{
+			name: 'STAR TRACKER',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: startracker,
+			docs: '/'
+		},
+		{
+			name: 'REACTION WHEELS',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: balloon,
+			docs: '/'
+		},
+		{
+			name: 'STEREO CAM',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+			image: cardsat,
+			docs: '/'
+		}
+	];
+
+	// ,
+	// 	{
+	// 		name: 'STAR TRACKER',
+	// 		description:
+	// 			'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
+	// 		image: startracker,
+	// 		docs: '/'
+	// 	}
+
+	$: console.log(cardsatsIndex);
 </script>
 
 <div>
@@ -68,17 +108,34 @@
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
+		<div class="mx-auto w-[90%] mb-10 flex overflow-x-auto justify-center">
+			{#each components as component}
+				<div class="card w-96 bg-base-100 shadow-xl">
+					<figure class="px-10 pt-10">
+						<img src={component.image} alt={component.name} class="rounded-xl" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="card-title">{component.name}</h2>
+						<p>{component.description}</p>
+						<div class="card-actions">
+							<button class="btn btn-primary">Learn More</button>
+						</div>
+					</div>
+				</div>
+			{/each}
+		</div>
+		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
 		<div class="mx-auto w-[90%] mb-10">
-			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">FEATURES</div>
+			<div class="text-6xl uppercase mt-20 mx-2 font-black max-w-3xl">CARDSATS</div>
 			<div class="mt-10">
 				<div class="btn-group">
-					{#each features as feature, i}
+					{#each cardsats as cardsat, i}
 						<input
 							type="radio"
 							name="options"
-							data-title={feature.name}
+							data-title={cardsat.name}
 							class="btn min-w-fit"
-							bind:group={featuresIndex}
+							bind:group={cardsatsIndex}
 							value={i}
 						/>
 					{/each}
@@ -87,14 +144,14 @@
 				<div class="flex flex-col justify-center items-center sm:flex-row sm:justify-between">
 					<div class="mt-10 w-[300px] sm:h-[500px] text-center">
 						<p class="text-left">
-							{features[featuresIndex].description}
+							{cardsats[cardsatsIndex].description}
 						</p>
-						<a href={features[featuresIndex].docs}
+						<a href={cardsats[cardsatsIndex].docs}
 							><div class="btn btn-ghost mt-10 btn-active mx-auto">DOCUMENTATION</div></a
 						>
 					</div>
 					<div class="w-[50%] min-w-[300px]">
-						<img src={features[featuresIndex].image} alt="" />
+						<img src={cardsats[cardsatsIndex].image} alt="" />
 					</div>
 				</div>
 			</div>
