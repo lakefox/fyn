@@ -5574,9 +5574,9 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
     index = 0;
-    entry = "pages/__layout.svelte-606456cd.js";
-    js = ["pages/__layout.svelte-606456cd.js", "chunks/index-888fe02f.js"];
-    css = ["assets/pages/__layout.svelte-1216daf0.css"];
+    entry = "pages/__layout.svelte-e4e7692d.js";
+    js = ["pages/__layout.svelte-e4e7692d.js", "chunks/index-888fe02f.js"];
+    css = ["assets/pages/__layout.svelte-63d1bb6c.css"];
   }
 });
 
@@ -5721,14 +5721,16 @@ var init_index_svelte = __esm({
 			<div class="${"grid h-500 flex card bg-base-300 rounded-box place-items-center"}"><img${add_attribute("src", startracker, 0)} alt="${""}">
 				<div class="${"text-2xl uppercase font-bold"}">STAR TRACKER</div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
-		<div class="${"mx-auto w-[90%] mb-10 flex overflow-x-auto justify-center"}">${each(components, (component) => {
-        return `<div class="${"card w-96 bg-base-100 shadow-xl"}"><figure class="${"px-10 pt-10"}"><img${add_attribute("src", component.image, 0)}${add_attribute("alt", component.name, 0)} class="${"rounded-xl"}"></figure>
+		<div class="${"mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center"}">${each(components, (component) => {
+        return `<div class="${"card w-96 bg-base-100 shadow-xl min-w-[300px]"}"><figure class="${"px-10 pt-10"}"><img${add_attribute("src", component.image, 0)}${add_attribute("alt", component.name, 0)} class="${"rounded-xl"}"></figure>
 					<div class="${"card-body items-center text-center"}"><h2 class="${"card-title"}">${escape(component.name)}</h2>
 						<p>${escape(component.description)}</p>
 						<div class="${"card-actions"}"><button class="${"btn btn-primary"}">Learn More</button>
 						</div></div>
 				</div>`;
       })}</div>
+		<div class="${"flex justify-center"}"><div class="${"mr-20"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" class="${"fill-white"}"><path d="${"m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"}"></path></svg></div>
+			<div class="${"ml-20"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" width="${"24"}" height="${"24"}" class="${"fill-white"}"><path d="${"M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"}"></path></svg></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
 		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"text-6xl uppercase mt-20 mx-2 font-black max-w-3xl"}">CARDSATS</div>
 			<div class="${"mt-10"}"><div class="${"btn-group"}">${each(cardsats, (cardsat2, i2) => {
@@ -5739,7 +5741,7 @@ var init_index_svelte = __esm({
 						<a${add_attribute("href", cardsats[cardsatsIndex].docs, 0)}><div class="${"btn btn-ghost mt-10 btn-active mx-auto"}">DOCUMENTATION</div></a></div>
 					<div class="${"w-[50%] min-w-[300px]"}"><img${add_attribute("src", cardsats[cardsatsIndex].image, 0)} alt="${""}"></div></div></div></div>
 		<div class="${"w- h-px bg-white mt-20 w-11/12 mx-auto"}"></div>
-		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"hero mt-40 mb-40 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><img${add_attribute("src", balloon, 0)} class="${"max-w-sm rounded-lg shadow-2xl"}" alt="${"balloon"}">
+		<div class="${"mx-auto w-[90%] mb-10"}"><div class="${"hero mt-40 mb-40 bg-base-200"}"><div class="${"hero-content flex-col lg:flex-row-reverse"}"><img${add_attribute("src", balloon, 0)} class="${"max-w-[90%] rounded-lg shadow-2xl"}" alt="${"balloon"}">
 					<div><h1 class="${"text-5xl font-bold"}">NEED LAUNCH ASSISTANCE?</h1>
 						<p class="${"py-6"}">We&#39;re excited to offer our new suborbital balloon launch service. For just $100 per
 							month per 1U, you can launch your payload into space! This is an incredible
@@ -5789,8 +5791,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-605c0072.js";
-    js3 = ["pages/index.svelte-605c0072.js", "chunks/index-888fe02f.js"];
+    entry3 = "pages/index.svelte-4fb8f1f2.js";
+    js3 = ["pages/index.svelte-4fb8f1f2.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8311,7 +8313,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-00503f1f.js", "js": ["start-00503f1f.js", "chunks/index-888fe02f.js"], "css": [] },
+    entry: { "file": "start-7e975a0f.js", "js": ["start-7e975a0f.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -108,9 +108,9 @@
 			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
-		<div class="mx-auto w-[90%] mb-10 flex overflow-x-auto justify-center">
+		<div class="mx-auto w-[90%] mb-10 flex overflow-x-auto justify-start md:justify-center">
 			{#each components as component}
-				<div class="card w-96 bg-base-100 shadow-xl">
+				<div class="card w-96 bg-base-100 shadow-xl min-w-[300px]">
 					<figure class="px-10 pt-10">
 						<img src={component.image} alt={component.name} class="rounded-xl" />
 					</figure>
@@ -123,6 +123,22 @@
 					</div>
 				</div>
 			{/each}
+		</div>
+		<div class="flex justify-center">
+			<div class="mr-20">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white"
+					><path
+						d="m4.431 12.822 13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645z"
+					/></svg
+				>
+			</div>
+			<div class="ml-20">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-white"
+					><path
+						d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
+					/></svg
+				>
+			</div>
 		</div>
 		<div class="w- h-px bg-white mt-20 w-11/12 mx-auto" />
 		<div class="mx-auto w-[90%] mb-10">
@@ -160,7 +176,7 @@
 		<div class="mx-auto w-[90%] mb-10">
 			<div class="hero mt-40 mb-40 bg-base-200">
 				<div class="hero-content flex-col lg:flex-row-reverse">
-					<img src={balloon} class="max-w-sm rounded-lg shadow-2xl" alt="balloon" />
+					<img src={balloon} class="max-w-[90%] rounded-lg shadow-2xl" alt="balloon" />
 					<div>
 						<h1 class="text-5xl font-bold">NEED LAUNCH ASSISTANCE?</h1>
 						<p class="py-6">
