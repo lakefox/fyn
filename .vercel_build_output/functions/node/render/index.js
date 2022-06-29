@@ -5637,12 +5637,14 @@ var index_svelte_exports = {};
 __export(index_svelte_exports, {
   default: () => Routes
 });
-var cardsat, startracker, balloon, logo, css3, IconBase, DiTerminal, Routes;
+var cardsat, startracker, depthSensingCam, reactionWheel, balloon, logo, css3, IconBase, DiTerminal, Routes;
 var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/index.svelte.js"() {
     init_index_1259f1f6();
     cardsat = "/_app/immutable/assets/card_sat_wireframe-03ae87f2.png";
     startracker = "/_app/immutable/assets/star_tracker-d089a6cf.png";
+    depthSensingCam = "/_app/immutable/assets/depth_sensing_cam-45127ba7.png";
+    reactionWheel = "/_app/immutable/assets/reaction_wheel-7f61939b.png";
     balloon = "/_app/immutable/assets/balloon-3e499072.png";
     logo = "/_app/immutable/assets/logo_black-5658c5db.png";
     css3 = {
@@ -5693,19 +5695,22 @@ var init_index_svelte = __esm({
           name: "STAR TRACKER",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: startracker,
-          docs: "/"
+          docs: "/",
+          label: "COMING SOON"
         },
         {
           name: "REACTION WHEELS",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: balloon,
-          docs: "/"
+          image: reactionWheel,
+          docs: "/",
+          label: "COMING SOON"
         },
         {
           name: "STEREO CAM",
           description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
-          image: cardsat,
-          docs: "/"
+          image: depthSensingCam,
+          docs: "/",
+          label: "COMING SOON"
         }
       ];
       {
@@ -5725,7 +5730,7 @@ var init_index_svelte = __esm({
         return `<div class="${"card w-96 bg-base-100 shadow-xl min-w-[300px]"}"><figure class="${"px-10 pt-10"}"><img${add_attribute("src", component.image, 0)}${add_attribute("alt", component.name, 0)} class="${"rounded-xl"}"></figure>
 					<div class="${"card-body items-center text-center"}"><h2 class="${"card-title"}">${escape(component.name)}</h2>
 						<p>${escape(component.description)}</p>
-						<div class="${"card-actions"}"><button class="${"btn btn-primary"}">Learn More</button>
+						<div class="${"card-actions"}"><button class="${"btn btn-primary"}">${escape(component.label)}</button>
 						</div></div>
 				</div>`;
       })}</div>
@@ -5789,8 +5794,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-e83ba0a3.js";
-    js3 = ["pages/index.svelte-e83ba0a3.js", "chunks/index-888fe02f.js"];
+    entry3 = "pages/index.svelte-bd6d0436.js";
+    js3 = ["pages/index.svelte-bd6d0436.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8311,7 +8316,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-fdc9b0a1.js", "js": ["start-fdc9b0a1.js", "chunks/index-888fe02f.js"], "css": [] },
+    entry: { "file": "start-f5b54593.js", "js": ["start-f5b54593.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

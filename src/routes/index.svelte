@@ -1,6 +1,8 @@
 <script>
 	import cardsat from './assets/card_sat_wireframe.png';
 	import startracker from './assets/star_tracker.png';
+	import depthSensingCam from './assets/depth_sensing_cam.png';
+	import reactionWheel from './assets/reaction_wheel.png';
 	import balloon from './assets/balloon.png';
 	import logo from './assets/logo_black.png';
 	import DiTerminal from 'svelte-icons/di/DiTerminal.svelte';
@@ -37,21 +39,24 @@
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
-			docs: '/'
+			docs: '/',
+			label: 'COMING SOON'
 		},
 		{
 			name: 'REACTION WHEELS',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: balloon,
-			docs: '/'
+			image: reactionWheel,
+			docs: '/',
+			label: 'COMING SOON'
 		},
 		{
 			name: 'STEREO CAM',
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
-			image: cardsat,
-			docs: '/'
+			image: depthSensingCam,
+			docs: '/',
+			label: 'COMING SOON'
 		}
 	];
 
@@ -120,7 +125,7 @@
 						<h2 class="card-title">{component.name}</h2>
 						<p>{component.description}</p>
 						<div class="card-actions">
-							<button class="btn btn-primary">Learn More</button>
+							<button class="btn btn-primary">{component.label}</button>
 						</div>
 					</div>
 				</div>
