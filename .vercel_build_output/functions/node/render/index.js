@@ -5675,19 +5675,19 @@ var init_index_svelte = __esm({
           name: "CARD SAT 1",
           description: "Card sat 1 is a high-powered single-board satellite capable of sending and receiving messages from low-cost transceivers on the ground. It includes a full suite of cardsats like satellite-to-satellite communication so you can transmit across the globe.",
           image: cardsat,
-          docs: "/"
+          docs: "https://docs.fyn.sh/card-sat-1/design-overview"
         },
         {
           name: "CARD SAT 2",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: startracker,
-          docs: "/"
+          docs: "https://docs.fyn.sh/card-sat-2/design-overview"
         },
         {
           name: "CARD SAT 3",
           description: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.",
           image: startracker,
-          docs: "/"
+          docs: "https://docs.fyn.sh/card-sat-3/design-overview"
         }
       ];
       let components = [
@@ -5794,8 +5794,8 @@ var init__3 = __esm({
   ".svelte-kit/output/server/nodes/2.js"() {
     init_index_svelte();
     index3 = 2;
-    entry3 = "pages/index.svelte-bd6d0436.js";
-    js3 = ["pages/index.svelte-bd6d0436.js", "chunks/index-888fe02f.js"];
+    entry3 = "pages/index.svelte-b04f0e7a.js";
+    js3 = ["pages/index.svelte-b04f0e7a.js", "chunks/index-888fe02f.js"];
     css4 = ["assets/pages/index.svelte-cf3861ad.css"];
   }
 });
@@ -8316,7 +8316,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png"]),
   mimeTypes: { ".png": "image/png" },
   _: {
-    entry: { "file": "start-b37ab2c8.js", "js": ["start-b37ab2c8.js", "chunks/index-888fe02f.js"], "css": [] },
+    entry: { "file": "start-a7a9c50d.js", "js": ["start-a7a9c50d.js", "chunks/index-888fe02f.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

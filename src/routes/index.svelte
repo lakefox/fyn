@@ -15,21 +15,21 @@
 			description:
 				'Card sat 1 is a high-powered single-board satellite capable of sending and receiving messages from low-cost transceivers on the ground. It includes a full suite of cardsats like satellite-to-satellite communication so you can transmit across the globe.',
 			image: cardsat,
-			docs: '/'
+			docs: 'https://docs.fyn.sh/card-sat-1/design-overview'
 		},
 		{
 			name: 'CARD SAT 2',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
-			docs: '/'
+			docs: 'https://docs.fyn.sh/card-sat-2/design-overview'
 		},
 		{
 			name: 'CARD SAT 3',
 			description:
 				'2Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro, totam alias consequuntur sint fugit velit perferendis nemo modi commodi blanditiis, quidem quo ea voluptates consequatur aliquam doloribus laudantium.',
 			image: startracker,
-			docs: '/'
+			docs: 'https://docs.fyn.sh/card-sat-3/design-overview'
 		}
 	];
 
